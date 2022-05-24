@@ -1,0 +1,174 @@
+/* 
+===========================
+   IMPORTAÇÃO DE FONTES
+===========================
+*/
+
+@font-face {
+    font-family: 'Go Around';
+    src: url('../font/Go around the books 2022.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hello';
+    src: url('../font/Hello.ttf');
+}
+
+@font-face {
+    font-family: 'Wolves';
+    src: url('../font/Nightcore Demo.ttf');
+}
+
+/* 
+===================
+   VARIAVEIS
+===================
+*/
+
+:root {
+    --cor-1: rgb(186, 220, 221);
+    --cor-2: rgb(122, 159, 161);
+    --cor-3: rgba(186, 220, 221, 0.5);
+    --cor-4: rgba(205, 222, 223, 0.63);
+    --cor-5: rgb(40, 78, 80);
+    --cor-6: rgba(40, 78, 80, 0.5);
+
+    /* Cores padrões */
+    --cor-preta: rgb(0, 0, 0);
+    --cor-branca: rgb(255, 255, 255);
+    --cor-azul: rgb(31, 143, 255);
+    --cor-vermelha: rgb(165, 42, 42);
+
+    /* Fontes */
+    --fonte-goaround: 'Go Around', sans-serif;
+    --fonte-hello: 'Hello', sans-serif;
+    --fonte-wolves: 'Wolves', sans-serif;
+}
+
+/* 
+===================
+   ESTILOS GLOBAIS
+===================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor-preta);
+}
+
+body {
+    background-color: var(--cor-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    /* width: 100vw; */
+}
+
+/* 
+===================
+   HEAD
+===================
+*/
+
+.cabecalho {
+    background-color: var(--cor-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.cabecalho-titulo {
+    display: flex;
+    align-items: baseline;
+}
+
+.cabecalho-titulo img {
+    margin-left: 2rem;
+    height: 100%;
+    transform: scaleX(-1);
+}
+
+.cabecalho-titulo h1 {
+    margin-left: 2rem;
+}
+
+#titulo {
+    font-family: var(--fonte-goaround);
+    white-space: nowrap;
+    font-size: 4rem;
+    margin-left: rem;
+}
+
+.nav-links {
+    width: 8rem;
+    margin-right: 3rem;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+
+.fa-linkedin-in {
+    color: var(--cor-preta);
+    padding: 1rem;
+}
+
+.fa-linkedin-in:hover {
+    background-color: var(--cor-azul);
+    color: var(--cor-branca);
+    border-radius: 1rem;
+}
+
+.fa-github {
+    padding: 1rem;
+    color: var(--cor-preta);
+}
+
+.fa-github:hover {
+    border-radius: 1rem;
+    background-color: var(--cor-preta);
+    color: var(--cor-branca);
+}
+
+/* 
+===================
+   MAIN        
+===================
+*/
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 
+===================
+   FOOTER        
+===================
+*/
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-hello);
+    font-size: 1.2rem;
+}
+
+.fa-heart {
+    color: var(--cor-vermelha);
+}

@@ -1,0 +1,23 @@
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 1rem;
+    font-family: var(--fonte-goaround);
+    border-radius: 18px;
+    border: 0.1rem solid var(--cor-5);
+    background-color: var(--cor-3);
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--cor-branca);
+}
+
+.btn:active{
+    background-color: var(--cor-6);
+}

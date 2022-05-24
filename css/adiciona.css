@@ -1,0 +1,42 @@
+.palavra {
+    height: 250px;
+    width: 700px;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--cor-3);
+    resize: none;
+}
+
+.botoes-adiciona {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.btn-adicionar {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 0.5px solid var(--cor-5);
+    cursor: pointer;
+    background-color: var(--cor-1);
+    font-family: var(--fonte-goaround);
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: var(--cor-branca);
+}
+
+.btn:active {
+    background-color: var(--cor-6);
+}
+
+.conteudo {
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
