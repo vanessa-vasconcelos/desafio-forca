@@ -19,6 +19,10 @@
     src: url('../font/Nightcore Demo.ttf');
 }
 
+@font-face {
+    font-family: 'Love';
+    src: url('../font/The-Charlotte.otf');
+}
 /* 
 ===================
    VARIAVEIS
@@ -43,6 +47,7 @@
     --fonte-goaround: 'Go Around', sans-serif;
     --fonte-hello: 'Hello', sans-serif;
     --fonte-wolves: 'Wolves', sans-serif;
+    --fonte-love: 'Love', sans-serif;
 }
 
 /* 
@@ -72,7 +77,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    /* width: 100vw; */
 }
 
 /* 
@@ -152,9 +156,13 @@ body {
 */
 
 .conteudo {
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
     justify-content: space-around;
 }
+
 
 /* 
 ===================
@@ -171,4 +179,17 @@ body {
 
 .fa-heart {
     color: var(--cor-vermelha);
+}
+
+/* 
+===================
+   MEDIA       
+===================
+*/
+@media screen and (min-width:720px) {
+    
+    
+    .cabecalho-titulo {
+        font-size: 0.5rem;
+    }
 }

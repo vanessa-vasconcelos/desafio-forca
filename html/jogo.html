@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <title>Jogo da Forca</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/jogo.css">
+    <!-- <link rel="stylesheet" href="../css/video.css"> -->
 </head>
+
 <body>
     <header class="cabecalho">
         <div class="cabecalho-titulo">
@@ -18,25 +22,72 @@
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/dev-vanessa-vasconcelos" target="_blank"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
+                            class="fa-brands fa-linkedin-in"></i></a>
                 </li>
                 <li>
                     <a href="https://github.com/vanessa-vasconcelos" target="_blank"><i
-                        class="fa-brands fa-github"></i></a>
+                            class="fa-brands fa-github"></i></a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="conteudo">
+        <div class="titulo">
+            <h1>Jogo da Forca</h1>
+            <h2>Digite uma letra e adivinhe a palavra!</h2>
+        </div>
+
+
+        <div class="forca">
+            <svg height="250" width="200" class="forca">
+                <line x1="60" y1="20" x2="140" y2="20" />
+                <line x1="140" y1="20" x2="140" y2="50" />
+                <line x1="60" y1="20" x2="60" y2="230" />
+                <line x1="20" y1="230" x2="100" y2="230" />
+
+                <!-- cabeça -->
+                <circle cx="140" cy="70" r="20" class="forca-parte" />
+                <!-- corpo -->
+                <line x1="140" y1="90" x2="140" y2="150" class="forca-parte" />
+                <!-- braços -->
+                <line x1="140" y1="120" x2="120" y2="100" class="forca-parte" />
+                <line x1="140" y1="120" x2="160" y2="100" class="forca-parte" />
+                <!-- pernas -->
+                <line x1="140" y1="150" x2="120" y2="180" class="forca-parte" />
+                <line x1="140" y1="150" x2="160" y2="180" class="forca-parte" />
+            </svg>
+
+            <div class="escrever">
+                <div class="letras-erradas"></div>
+                <div class="palavra-secreta"></div>
+            </div>
+
+        </div>
+
+        <div class="aviso-final">
+            <div class="aviso">
+              <h2 id="mensagem"></h2>
+              <button id="btn-jogar" onclick="reiniciarJogo()">
+                Jogar novamente
+              </button>
+            </div>
+          </div>
+
         <div class="btn-jogo">
-            <a href=><button class="btn botoes-jogo" id="botao-novo">Novo Jogo</button></a>
             <a href="../html/home.html"><button class="btn botoes-jogo" id="desistir">Desistir</button></a>
         </div>
+
+        <div class="aviso-palavra-repetida">
+            VOCÊ JÁ USOU ESSA PALAVRA!
+        </div>
+
     </main>
-    
+
     <footer class="rodape">
         <h2>Feito com <i class="fa fa-heart"></i> por Vanessa Vasconcelos</h2>
-     </footer>
+    </footer>
 
+    <script src="../js/jogo.js"></script>
 </body>
+
 </html>
