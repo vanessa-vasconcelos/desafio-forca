@@ -86,3 +86,7 @@ function eLetra(codigo) {
 function reiniciarJogo() {
     window.location.reload();
 }
+
+
+
+

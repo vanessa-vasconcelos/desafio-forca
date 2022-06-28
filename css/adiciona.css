@@ -40,3 +40,19 @@
     align-self: center;
     align-items: center;
 }
+
+@media (max-width:770px) {
+
+    .palavra {
+        height: 300px;
+        width: 450px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:590px) {
+
+    .btn-adicionar {
+        font-size: 0.8rem;
+    }
+}

@@ -118,3 +118,9 @@
 #btn-jogar:hover {
     background-color: var(--cor-2);
 }
+
+@media (max-width: 930px) {
+    .titulo {
+        flex-direction: column;
+    }
+}
